@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    color: red;
+}
+p{
+    font-size:  15px;
+}
+body{
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    background-color: black;
+    border:  3px solid red;
+    padding: 1px 1px;
+    
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.k a:hover{
+    color: rgb(119, 19, 19);
+}
+.a a:hover{
+    color: green;
+}
+.d a:hover{
+    color: blue;
+}
+#tartalom{
+    background-image: url("kepek/papirusz.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    max-width: 1000px;
+    margin:auto;
+}
+.kepek{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.kepek img{
+    border: 1px solid red;
+    gap: 10px;
+    padding: 2px;
+}
+@media screen and (max-width:650px) {
+    .kepek{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .kepek{
+        grid-template-columns: 1fr;
+    }
+    
+}
